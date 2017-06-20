@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		629550C4CDCBD404227A165C /* Pods_FJAddressPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AF9DCAC9E28C4ECAB98821 /* Pods_FJAddressPickerDemo.framework */; };
+		BF62CBE61EF8FD5100AB2C62 /* FJAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBE51EF8FD5100AB2C62 /* FJAddressModel.swift */; };
+		BF62CBE81EF8FD6D00AB2C62 /* FJSelectLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBE71EF8FD6D00AB2C62 /* FJSelectLocationView.swift */; };
+		BF62CBEA1EF8FD7B00AB2C62 /* FJAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBE91EF8FD7B00AB2C62 /* FJAddressView.swift */; };
+		BF62CBED1EF8FD9700AB2C62 /* FJAddressTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBEB1EF8FD9700AB2C62 /* FJAddressTVCell.swift */; };
+		BF62CBF01EF8FF7900AB2C62 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */; };
+		BF62CBF21EF9076B00AB2C62 /* FJButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF11EF9076B00AB2C62 /* FJButtonItem.swift */; };
+		BF62CBF41EF9099900AB2C62 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */; };
+		BF62CBFA1EF91E6C00AB2C62 /* FJButtonCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */; };
 		BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */; };
 		BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82C1EF8C761006035A5 /* ViewController.swift */; };
 		BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD82E1EF8C761006035A5 /* Main.storyboard */; };
@@ -34,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20AF9DCAC9E28C4ECAB98821 /* Pods_FJAddressPickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJAddressPickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449A7A076E4CE9E7B263CDCA /* Pods-FJAddressPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJAddressPickerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJAddressPickerDemo/Pods-FJAddressPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF62CBE51EF8FD5100AB2C62 /* FJAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJAddressModel.swift; sourceTree = "<group>"; };
+		BF62CBE71EF8FD6D00AB2C62 /* FJSelectLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJSelectLocationView.swift; sourceTree = "<group>"; };
+		BF62CBE91EF8FD7B00AB2C62 /* FJAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJAddressView.swift; sourceTree = "<group>"; };
+		BF62CBEB1EF8FD9700AB2C62 /* FJAddressTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJAddressTVCell.swift; sourceTree = "<group>"; };
+		BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		BF62CBF11EF9076B00AB2C62 /* FJButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJButtonItem.swift; sourceTree = "<group>"; };
+		BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJButtonCVCell.swift; sourceTree = "<group>"; };
 		BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJAddressPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDAD82C1EF8C761006035A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,7 @@
 		BFDAD8461EF8C761006035A5 /* FJAddressPickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJAddressPickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDAD84A1EF8C761006035A5 /* FJAddressPickerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FJAddressPickerDemoUITests.swift; sourceTree = "<group>"; };
 		BFDAD84C1EF8C761006035A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3DB4EEB0B1E1995FEC8B84 /* Pods-FJAddressPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJAddressPickerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJAddressPickerDemo/Pods-FJAddressPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629550C4CDCBD404227A165C /* Pods_FJAddressPickerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F66C47F7D7CCEFE6B473C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20AF9DCAC9E28C4ECAB98821 /* Pods_FJAddressPickerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF62CBE21EF8C99600AB2C62 /* FJAddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CBE51EF8FD5100AB2C62 /* FJAddressModel.swift */,
+				BF62CBE71EF8FD6D00AB2C62 /* FJSelectLocationView.swift */,
+				BF62CBF11EF9076B00AB2C62 /* FJButtonItem.swift */,
+				BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */,
+				BF62CBE91EF8FD7B00AB2C62 /* FJAddressView.swift */,
+				BF62CBEB1EF8FD9700AB2C62 /* FJAddressTVCell.swift */,
+			);
+			path = FJAddressPicker;
+			sourceTree = "<group>";
+		};
 		BFDAD81E1EF8C761006035A5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				BFDAD83E1EF8C761006035A5 /* FJAddressPickerDemoTests */,
 				BFDAD8491EF8C761006035A5 /* FJAddressPickerDemoUITests */,
 				BFDAD8281EF8C761006035A5 /* Products */,
+				C9D2D4F23417C9747B0C1ECF /* Pods */,
+				2F66C47F7D7CCEFE6B473C93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +141,11 @@
 		BFDAD8291EF8C761006035A5 /* FJAddressPickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF62CBE21EF8C99600AB2C62 /* FJAddressPicker */,
 				BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */,
 				BFDAD82C1EF8C761006035A5 /* ViewController.swift */,
+				BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */,
+				BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */,
 				BFDAD82E1EF8C761006035A5 /* Main.storyboard */,
 				BFDAD8311EF8C761006035A5 /* Assets.xcassets */,
 				BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */,
@@ -125,6 +172,15 @@
 			path = FJAddressPickerDemoUITests;
 			sourceTree = "<group>";
 		};
+		C9D2D4F23417C9747B0C1ECF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE3DB4EEB0B1E1995FEC8B84 /* Pods-FJAddressPickerDemo.debug.xcconfig */,
+				449A7A076E4CE9E7B263CDCA /* Pods-FJAddressPickerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFDAD84F1EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemo" */;
 			buildPhases = (
+				9537DE759FD1578D72D95B0E /* [CP] Check Pods Manifest.lock */,
 				BFDAD8231EF8C761006035A5 /* Sources */,
 				BFDAD8241EF8C761006035A5 /* Frameworks */,
 				BFDAD8251EF8C761006035A5 /* Resources */,
+				3F90D1DD17D80A0E907E619F /* [CP] Embed Pods Frameworks */,
+				553EE84BA27A2D1810E4EADA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +313,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F90D1DD17D80A0E907E619F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FJAddressPickerDemo/Pods-FJAddressPickerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		553EE84BA27A2D1810E4EADA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FJAddressPickerDemo/Pods-FJAddressPickerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9537DE759FD1578D72D95B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFDAD8231EF8C761006035A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF62CBFA1EF91E6C00AB2C62 /* FJButtonCVCell.swift in Sources */,
+				BF62CBF21EF9076B00AB2C62 /* FJButtonItem.swift in Sources */,
+				BF62CBF41EF9099900AB2C62 /* Color+Extension.swift in Sources */,
+				BF62CBEA1EF8FD7B00AB2C62 /* FJAddressView.swift in Sources */,
 				BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */,
+				BF62CBED1EF8FD9700AB2C62 /* FJAddressTVCell.swift in Sources */,
 				BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */,
+				BF62CBE61EF8FD5100AB2C62 /* FJAddressModel.swift in Sources */,
+				BF62CBF01EF8FF7900AB2C62 /* View+Extension.swift in Sources */,
+				BF62CBE81EF8FD6D00AB2C62 /* FJSelectLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +525,7 @@
 		};
 		BFDAD8501EF8C761006035A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3DB4EEB0B1E1995FEC8B84 /* Pods-FJAddressPickerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FJAddressPickerDemo/Info.plist;
@@ -422,6 +538,7 @@
 		};
 		BFDAD8511EF8C761006035A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449A7A076E4CE9E7B263CDCA /* Pods-FJAddressPickerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FJAddressPickerDemo/Info.plist;
@@ -505,6 +622,7 @@
 				BFDAD8511EF8C761006035A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFDAD8521EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +631,7 @@
 				BFDAD8541EF8C761006035A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFDAD8551EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +640,7 @@
 				BFDAD8571EF8C761006035A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

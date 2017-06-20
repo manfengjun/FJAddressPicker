@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let selectView = FJSelectLocationView(frame: CGRect(x: 0, y: self.view.height() - 330, width: self.view.width(), height: 330))
+        view.addSubview(selectView)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
