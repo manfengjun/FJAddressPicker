@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */; };
+		BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82C1EF8C761006035A5 /* ViewController.swift */; };
+		BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD82E1EF8C761006035A5 /* Main.storyboard */; };
+		BFDAD8321EF8C761006035A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD8311EF8C761006035A5 /* Assets.xcassets */; };
+		BFDAD8351EF8C761006035A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */; };
+		BFDAD8401EF8C761006035A5 /* FJAddressPickerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD83F1EF8C761006035A5 /* FJAddressPickerDemoTests.swift */; };
+		BFDAD84B1EF8C761006035A5 /* FJAddressPickerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD84A1EF8C761006035A5 /* FJAddressPickerDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFDAD83C1EF8C761006035A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDAD81F1EF8C761006035A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDAD8261EF8C761006035A5;
+			remoteInfo = FJAddressPickerDemo;
+		};
+		BFDAD8471EF8C761006035A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDAD81F1EF8C761006035A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDAD8261EF8C761006035A5;
+			remoteInfo = FJAddressPickerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJAddressPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFDAD82C1EF8C761006035A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFDAD82F1EF8C761006035A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFDAD8311EF8C761006035A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFDAD8341EF8C761006035A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFDAD8361EF8C761006035A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFDAD83B1EF8C761006035A5 /* FJAddressPickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJAddressPickerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDAD83F1EF8C761006035A5 /* FJAddressPickerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FJAddressPickerDemoTests.swift; sourceTree = "<group>"; };
+		BFDAD8411EF8C761006035A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFDAD8461EF8C761006035A5 /* FJAddressPickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJAddressPickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDAD84A1EF8C761006035A5 /* FJAddressPickerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FJAddressPickerDemoUITests.swift; sourceTree = "<group>"; };
+		BFDAD84C1EF8C761006035A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFDAD8241EF8C761006035A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDAD8381EF8C761006035A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDAD8431EF8C761006035A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFDAD81E1EF8C761006035A5 = {
+			isa = PBXGroup;
+			children = (
+				BFDAD8291EF8C761006035A5 /* FJAddressPickerDemo */,
+				BFDAD83E1EF8C761006035A5 /* FJAddressPickerDemoTests */,
+				BFDAD8491EF8C761006035A5 /* FJAddressPickerDemoUITests */,
+				BFDAD8281EF8C761006035A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFDAD8281EF8C761006035A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */,
+				BFDAD83B1EF8C761006035A5 /* FJAddressPickerDemoTests.xctest */,
+				BFDAD8461EF8C761006035A5 /* FJAddressPickerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFDAD8291EF8C761006035A5 /* FJAddressPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */,
+				BFDAD82C1EF8C761006035A5 /* ViewController.swift */,
+				BFDAD82E1EF8C761006035A5 /* Main.storyboard */,
+				BFDAD8311EF8C761006035A5 /* Assets.xcassets */,
+				BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */,
+				BFDAD8361EF8C761006035A5 /* Info.plist */,
+			);
+			path = FJAddressPickerDemo;
+			sourceTree = "<group>";
+		};
+		BFDAD83E1EF8C761006035A5 /* FJAddressPickerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFDAD83F1EF8C761006035A5 /* FJAddressPickerDemoTests.swift */,
+				BFDAD8411EF8C761006035A5 /* Info.plist */,
+			);
+			path = FJAddressPickerDemoTests;
+			sourceTree = "<group>";
+		};
+		BFDAD8491EF8C761006035A5 /* FJAddressPickerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFDAD84A1EF8C761006035A5 /* FJAddressPickerDemoUITests.swift */,
+				BFDAD84C1EF8C761006035A5 /* Info.plist */,
+			);
+			path = FJAddressPickerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFDAD8261EF8C761006035A5 /* FJAddressPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDAD84F1EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemo" */;
+			buildPhases = (
+				BFDAD8231EF8C761006035A5 /* Sources */,
+				BFDAD8241EF8C761006035A5 /* Frameworks */,
+				BFDAD8251EF8C761006035A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FJAddressPickerDemo;
+			productName = FJAddressPickerDemo;
+			productReference = BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFDAD83A1EF8C761006035A5 /* FJAddressPickerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDAD8521EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemoTests" */;
+			buildPhases = (
+				BFDAD8371EF8C761006035A5 /* Sources */,
+				BFDAD8381EF8C761006035A5 /* Frameworks */,
+				BFDAD8391EF8C761006035A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFDAD83D1EF8C761006035A5 /* PBXTargetDependency */,
+			);
+			name = FJAddressPickerDemoTests;
+			productName = FJAddressPickerDemoTests;
+			productReference = BFDAD83B1EF8C761006035A5 /* FJAddressPickerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFDAD8451EF8C761006035A5 /* FJAddressPickerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDAD8551EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemoUITests" */;
+			buildPhases = (
+				BFDAD8421EF8C761006035A5 /* Sources */,
+				BFDAD8431EF8C761006035A5 /* Frameworks */,
+				BFDAD8441EF8C761006035A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFDAD8481EF8C761006035A5 /* PBXTargetDependency */,
+			);
+			name = FJAddressPickerDemoUITests;
+			productName = FJAddressPickerDemoUITests;
+			productReference = BFDAD8461EF8C761006035A5 /* FJAddressPickerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDAD81F1EF8C761006035A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = JUN;
+				TargetAttributes = {
+					BFDAD8261EF8C761006035A5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					BFDAD83A1EF8C761006035A5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BFDAD8261EF8C761006035A5;
+					};
+					BFDAD8451EF8C761006035A5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BFDAD8261EF8C761006035A5;
+					};
+				};
+			};
+			buildConfigurationList = BFDAD8221EF8C761006035A5 /* Build configuration list for PBXProject "FJAddressPickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFDAD81E1EF8C761006035A5;
+			productRefGroup = BFDAD8281EF8C761006035A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFDAD8261EF8C761006035A5 /* FJAddressPickerDemo */,
+				BFDAD83A1EF8C761006035A5 /* FJAddressPickerDemoTests */,
+				BFDAD8451EF8C761006035A5 /* FJAddressPickerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFDAD8251EF8C761006035A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDAD8351EF8C761006035A5 /* LaunchScreen.storyboard in Resources */,
+				BFDAD8321EF8C761006035A5 /* Assets.xcassets in Resources */,
+				BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDAD8391EF8C761006035A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDAD8441EF8C761006035A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFDAD8231EF8C761006035A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */,
+				BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDAD8371EF8C761006035A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDAD8401EF8C761006035A5 /* FJAddressPickerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDAD8421EF8C761006035A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDAD84B1EF8C761006035A5 /* FJAddressPickerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFDAD83D1EF8C761006035A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFDAD8261EF8C761006035A5 /* FJAddressPickerDemo */;
+			targetProxy = BFDAD83C1EF8C761006035A5 /* PBXContainerItemProxy */;
+		};
+		BFDAD8481EF8C761006035A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFDAD8261EF8C761006035A5 /* FJAddressPickerDemo */;
+			targetProxy = BFDAD8471EF8C761006035A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFDAD82E1EF8C761006035A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFDAD82F1EF8C761006035A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFDAD8341EF8C761006035A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFDAD84D1EF8C761006035A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFDAD84E1EF8C761006035A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFDAD8501EF8C761006035A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FJAddressPickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JUN.FJAddressPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BFDAD8511EF8C761006035A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FJAddressPickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JUN.FJAddressPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BFDAD8531EF8C761006035A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FJAddressPickerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JUN.FJAddressPickerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FJAddressPickerDemo.app/FJAddressPickerDemo";
+			};
+			name = Debug;
+		};
+		BFDAD8541EF8C761006035A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FJAddressPickerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JUN.FJAddressPickerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FJAddressPickerDemo.app/FJAddressPickerDemo";
+			};
+			name = Release;
+		};
+		BFDAD8561EF8C761006035A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FJAddressPickerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JUN.FJAddressPickerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FJAddressPickerDemo;
+			};
+			name = Debug;
+		};
+		BFDAD8571EF8C761006035A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FJAddressPickerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JUN.FJAddressPickerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FJAddressPickerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFDAD8221EF8C761006035A5 /* Build configuration list for PBXProject "FJAddressPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDAD84D1EF8C761006035A5 /* Debug */,
+				BFDAD84E1EF8C761006035A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFDAD84F1EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDAD8501EF8C761006035A5 /* Debug */,
+				BFDAD8511EF8C761006035A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFDAD8521EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDAD8531EF8C761006035A5 /* Debug */,
+				BFDAD8541EF8C761006035A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFDAD8551EF8C761006035A5 /* Build configuration list for PBXNativeTarget "FJAddressPickerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDAD8561EF8C761006035A5 /* Debug */,
+				BFDAD8571EF8C761006035A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDAD81F1EF8C761006035A5 /* Project object */;
+}
