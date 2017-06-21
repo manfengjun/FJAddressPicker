@@ -9,8 +9,11 @@
 import UIKit
 
 class FJAddressModel: NSObject {
-    var id:String?
-    var name:String?
-    var level:String?
-    var parent_id:String?
+    var parent_id: Int = 0
+    var id: Int = 0
+    var level: Int = 0
+    var name: String!
+    
+    /// 是否选中
+    var isSelected:Bool = false
 }

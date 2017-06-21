@@ -13,9 +13,12 @@
 		BF62CBEA1EF8FD7B00AB2C62 /* FJAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBE91EF8FD7B00AB2C62 /* FJAddressView.swift */; };
 		BF62CBED1EF8FD9700AB2C62 /* FJAddressTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBEB1EF8FD9700AB2C62 /* FJAddressTVCell.swift */; };
 		BF62CBF01EF8FF7900AB2C62 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */; };
-		BF62CBF21EF9076B00AB2C62 /* FJButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF11EF9076B00AB2C62 /* FJButtonItem.swift */; };
 		BF62CBF41EF9099900AB2C62 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */; };
 		BF62CBFA1EF91E6C00AB2C62 /* FJButtonCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */; };
+		BF85C6281EFA654800196E84 /* FJSelectLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF85C6271EFA654800196E84 /* FJSelectLocationView.xib */; };
+		BF8D689E1EFA165F006669F3 /* SJBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D689B1EFA165F006669F3 /* SJBRequest.swift */; };
+		BF8D689F1EFA165F006669F3 /* SJBRequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D689C1EFA165F006669F3 /* SJBRequestUrl.swift */; };
+		BF8D68A01EFA165F006669F3 /* SJBRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D689D1EFA165F006669F3 /* SJBRequestModel.swift */; };
 		BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */; };
 		BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82C1EF8C761006035A5 /* ViewController.swift */; };
 		BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD82E1EF8C761006035A5 /* Main.storyboard */; };
@@ -50,9 +53,12 @@
 		BF62CBE91EF8FD7B00AB2C62 /* FJAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJAddressView.swift; sourceTree = "<group>"; };
 		BF62CBEB1EF8FD9700AB2C62 /* FJAddressTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJAddressTVCell.swift; sourceTree = "<group>"; };
 		BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
-		BF62CBF11EF9076B00AB2C62 /* FJButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJButtonItem.swift; sourceTree = "<group>"; };
 		BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJButtonCVCell.swift; sourceTree = "<group>"; };
+		BF85C6271EFA654800196E84 /* FJSelectLocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJSelectLocationView.xib; sourceTree = "<group>"; };
+		BF8D689B1EFA165F006669F3 /* SJBRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJBRequest.swift; sourceTree = "<group>"; };
+		BF8D689C1EFA165F006669F3 /* SJBRequestUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJBRequestUrl.swift; sourceTree = "<group>"; };
+		BF8D689D1EFA165F006669F3 /* SJBRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJBRequestModel.swift; sourceTree = "<group>"; };
 		BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJAddressPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDAD82C1EF8C761006035A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +114,7 @@
 			children = (
 				BF62CBE51EF8FD5100AB2C62 /* FJAddressModel.swift */,
 				BF62CBE71EF8FD6D00AB2C62 /* FJSelectLocationView.swift */,
-				BF62CBF11EF9076B00AB2C62 /* FJButtonItem.swift */,
+				BF85C6271EFA654800196E84 /* FJSelectLocationView.xib */,
 				BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */,
 				BF62CBE91EF8FD7B00AB2C62 /* FJAddressView.swift */,
 				BF62CBEB1EF8FD9700AB2C62 /* FJAddressTVCell.swift */,
@@ -146,6 +152,9 @@
 				BFDAD82C1EF8C761006035A5 /* ViewController.swift */,
 				BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */,
 				BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */,
+				BF8D689B1EFA165F006669F3 /* SJBRequest.swift */,
+				BF8D689C1EFA165F006669F3 /* SJBRequestUrl.swift */,
+				BF8D689D1EFA165F006669F3 /* SJBRequestModel.swift */,
 				BFDAD82E1EF8C761006035A5 /* Main.storyboard */,
 				BFDAD8311EF8C761006035A5 /* Assets.xcassets */,
 				BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */,
@@ -292,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFDAD8351EF8C761006035A5 /* LaunchScreen.storyboard in Resources */,
+				BF85C6281EFA654800196E84 /* FJSelectLocationView.xib in Resources */,
 				BFDAD8321EF8C761006035A5 /* Assets.xcassets in Resources */,
 				BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */,
 			);
@@ -367,13 +377,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF62CBFA1EF91E6C00AB2C62 /* FJButtonCVCell.swift in Sources */,
-				BF62CBF21EF9076B00AB2C62 /* FJButtonItem.swift in Sources */,
+				BF8D68A01EFA165F006669F3 /* SJBRequestModel.swift in Sources */,
 				BF62CBF41EF9099900AB2C62 /* Color+Extension.swift in Sources */,
 				BF62CBEA1EF8FD7B00AB2C62 /* FJAddressView.swift in Sources */,
 				BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */,
 				BF62CBED1EF8FD9700AB2C62 /* FJAddressTVCell.swift in Sources */,
 				BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */,
+				BF8D689E1EFA165F006669F3 /* SJBRequest.swift in Sources */,
 				BF62CBE61EF8FD5100AB2C62 /* FJAddressModel.swift in Sources */,
+				BF8D689F1EFA165F006669F3 /* SJBRequestUrl.swift in Sources */,
 				BF62CBF01EF8FF7900AB2C62 /* View+Extension.swift in Sources */,
 				BF62CBE81EF8FD6D00AB2C62 /* FJSelectLocationView.swift in Sources */,
 			);

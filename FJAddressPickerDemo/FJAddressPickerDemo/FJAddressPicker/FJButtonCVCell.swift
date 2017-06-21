@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class FJButtonCVCell: UICollectionViewCell {
     var model:FJAddressModel? {
         didSet {
@@ -20,8 +20,8 @@ class FJButtonCVCell: UICollectionViewCell {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.systemFont(ofSize: 12)
         titleLabel.textAlignment = .center
-        titleLabel.text = "sdfs"
-        titleLabel.backgroundColor = UIColor.red
+        titleLabel.text = "请选择"
+        titleLabel.backgroundColor = UIColor.white
         titleLabel.textColor = UIColor.hexStringColor(hex: "#333333")
         return titleLabel
     }()
@@ -39,10 +39,10 @@ class FJButtonCVCell: UICollectionViewCell {
     /// 初始化约束
     func setupConstraints() {
         titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(self.snp.left)
-            make.right.equalTo(self.snp.right)
-            make.top.equalTo(self.snp.top)
-            make.bottom.equalTo(self.snp.bottom)
+            make.leftMargin.equalTo(self.contentView.snp.left)
+            make.rightMargin.equalTo(self.contentView.snp.right)
+            make.topMargin.equalTo(self.contentView.snp.top)
+            make.bottomMargin.equalTo(self.contentView.snp.bottom)
         }
     }
 
