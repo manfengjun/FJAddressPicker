@@ -7,19 +7,20 @@
 //
 
 import UIKit
-import SnapKit
 class FJButtonCVCell: UICollectionViewCell {
     var model:FJAddressModel? {
         didSet {
             if let text = model?.name {
                 titleLabel.text = text
+                titleLabel.frame = CGRect(x: 15, y: 0, width: self.frame.width, height: self.frame.height)
             }
         }
     }
     lazy var titleLabel : UILabel = {
-        let titleLabel = UILabel()
-        titleLabel.font = UIFont.systemFont(ofSize: 12)
-        titleLabel.textAlignment = .center
+        let titleLabel = UILabel(frame:CGRect(x: 15, y: 0, width: self.frame.width, height: self.frame.height))
+        titleLabel.font = UIFont.systemFont(ofSize: 14)
+        titleLabel.textAlignment = .left
+        titleLabel.numberOfLines = 1
         titleLabel.text = "请选择"
         titleLabel.backgroundColor = UIColor.white
         titleLabel.textColor = UIColor.hexStringColor(hex: "#333333")
@@ -28,7 +29,6 @@ class FJButtonCVCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
-        setupConstraints()
     }
     /// 初始化UI
     func setupUI() {
@@ -36,16 +36,7 @@ class FJButtonCVCell: UICollectionViewCell {
         
     }
     
-    /// 初始化约束
-    func setupConstraints() {
-        titleLabel.snp.makeConstraints { (make) in
-            make.leftMargin.equalTo(self.contentView.snp.left)
-            make.rightMargin.equalTo(self.contentView.snp.right)
-            make.topMargin.equalTo(self.contentView.snp.top)
-            make.bottomMargin.equalTo(self.contentView.snp.bottom)
-        }
-    }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

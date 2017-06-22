@@ -37,7 +37,7 @@ class FJSelectLocationView: UIView {
         collectionView.register(FJButtonCVCell.classForCoder(), forCellWithReuseIdentifier: FJButtonCVCellIdentifier)
     }
     
-//    fileprivate var level:Int = 1
+    fileprivate var level:Int = 1
 //    fileprivate var parent_id = 0
     /// 已选数组
     fileprivate var itemArray:[FJAddressModel] = []
@@ -96,20 +96,40 @@ extension FJSelectLocationView:UICollectionViewDelegate,UICollectionViewDataSour
         if itemArray.count > 0 {
             cell.model = itemArray[indexPath.row]
             cell.titleLabel.textColor = UIColor.hexStringColor(hex: "#333333")
-//            if level == indexPath.row + 1 {
-//                cell.titleLabel.textColor = UIColor.red
-//            }
+            if level == indexPath.row || indexPath.row == itemArray.count - 1 {
+                cell.titleLabel.textColor = UIColor.red
+            }
         }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let model = self.itemArray[indexPath.row]
-        
-//        self.itemArray.removeSubrange(Range(indexPath.row..<itemArray.count))
+        let model = itemArray[indexPath.row]
+        totaldataArray.removeSubrange(Range(indexPath.row + 1..<itemArray.count))
+        scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH*CGFloat(model.level - 1), y: scrollView.contentOffset.y)
+        for (index,value) in tableViews.enumerated() {
+            if index > model.level - 1 {
+                value.removeFromSuperview()
+            }
+        }
+        tableViews.removeSubrange(Range(indexPath.row + 1..<itemArray.count))
+        itemArray.removeSubrange(Range(indexPath.row + 1..<itemArray.count))
+
+        collectionView.reloadData()
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 35)
+        let model = itemArray[indexPath.row]
+        let width = widthForsize(text: model.name, size: CGSize(width:10000, height:35), font: 14)
+        return CGSize(width: width + 20, height: 35)
     }
+    /// 自适应宽度
+    ///
+    /// - Parameter size: size description
+    func widthForsize(text:String, size:CGSize,font:CGFloat) -> CGFloat{
+        let attrbute = [NSFontAttributeName:UIFont.systemFont(ofSize: font)]
+        let nsStr = NSString(string: text)
+        return nsStr.boundingRect(with: size, options: [.usesLineFragmentOrigin,.usesFontLeading,.truncatesLastVisibleLine], attributes: attrbute, context: nil).size.width
+    }
+
 }
 extension FJSelectLocationView:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -131,6 +151,7 @@ extension FJSelectLocationView:UITableViewDelegate,UITableViewDataSource{
         let dataArray = totaldataArray[tableViews.index(of: tableView)!]
         let model = dataArray[indexPath.row]
         let newDataArray = FJSQLiteUtils.instance.queryData(level: model.level + 1, parent_id: model.id)
+        level = model.level
         if newDataArray.count > 0 {
             if model.level + 1 > totaldataArray.count {
                 totaldataArray.append(newDataArray)
@@ -148,6 +169,11 @@ extension FJSelectLocationView:UITableViewDelegate,UITableViewDataSource{
                 scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH*CGFloat(model.level), y: scrollView.contentOffset.y)
 
             }
+        }
+        else
+        {
+            itemArray[model.level - 1] = model
+            collectionView.reloadData()
         }
         return indexPath
     }
