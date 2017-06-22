@@ -42,43 +42,38 @@ class FJSelectLocationView: UIView {
     fileprivate var itemArray:[FJAddressModel] = []
     
     /// 地址数组
-    fileprivate var dataArray:[FJAddressModel] = []
-    
+
+    fileprivate var totaldataArray:[[FJAddressModel]] = []
+
+
     /// 地址列表
     fileprivate var tableViews:[UITableView] = []
     fileprivate var scrollView:UIScrollView = {
-        let scrollView = UIScrollView(frame: CGRect(x: 0, y: 41, width: UIScreen.main.bounds.size.width, height: 300))
+        let scrollView = UIScrollView(frame: CGRect(x: 0, y: 41, width: SCREEN_WIDTH, height: 300))
         scrollView.backgroundColor = UIColor.red
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.size.width, height: 300)
+        scrollView.contentSize = CGSize(width: SCREEN_WIDTH, height: 300)
         return scrollView
     }()
-    func setupTableView() -> UITableView {
-        let tableView = UITableView()
+    func setupTableView() {
+        let tableView = UITableView(frame: CGRect(x: SCREEN_WIDTH*CGFloat(tableViews.count), y: 0, width: SCREEN_WIDTH, height: 300), style: .plain)
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = .none
         tableView.register(FJAddressTVCell.classForCoder(), forCellReuseIdentifier: FJAddressTVCellIdentifier)
         tableView.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
-        return tableView
+        tableViews.append(tableView)
+        scrollView.addSubview(tableView)
+        scrollView.contentSize = CGSize(width: SCREEN_WIDTH*CGFloat(tableViews.count), height: 300)
     }
     func setupUI() {
         addSubview(scrollView)
+        setupCollectionView()
         setupTableView()
+        totaldataArray.append(FJSQLiteUtils.instance.queryAllProvince())
+        tableViews[0].reloadData()
     }
-    func dataRequest() {
-        SJBRequestModel.pull_fetchAddressSection(level: level, parent_id: parent_id) { (response, status) in
-            if status == 1 {
-                self.dataArray = response as! [FJAddressModel]
-
-                let model = FJAddressModel()
-                model.name = "请选择"
-                self.itemArray.append(model)
-//                self.tableView.reloadData()
-                self.collectionView.reloadData()
-            }
-        }
-    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -105,19 +100,19 @@ extension FJSelectLocationView:UICollectionViewDelegate,UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = self.itemArray[indexPath.row]
         level = indexPath.row + 1
-        SJBRequestModel.pull_fetchAddressSection(level: level, parent_id: model.parent_id) { (response, status) in
-            self.dataArray = response as! [FJAddressModel]
-            
-            self.level = model.level + 1
-            self.itemArray[self.level - 2] = model
-            
-            let temmodel = FJAddressModel()
-            temmodel.name = "请选择"
-            self.itemArray.append(temmodel)
-            
-            self.collectionView.reloadData()
-//            self.tableView.reloadData()
-        }
+//        SJBRequestModel.pull_fetchAddressSection(level: level, parent_id: model.parent_id) { (response, status) in
+//            self.dataArray = response as! [FJAddressModel]
+//            
+//            self.level = model.level + 1
+//            self.itemArray[self.level - 2] = model
+//            
+//            let temmodel = FJAddressModel()
+//            temmodel.name = "请选择"
+//            self.itemArray.append(temmodel)
+//            
+//            self.collectionView.reloadData()
+////            self.tableView.reloadData()
+//        }
         self.itemArray.removeSubrange(Range(indexPath.row..<itemArray.count))
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -129,49 +124,71 @@ extension FJSelectLocationView:UITableViewDelegate,UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let dataArray = totaldataArray[tableViews.index(of: tableView)!]
         return dataArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: FJAddressTVCellIdentifier, for: indexPath) as! FJAddressTVCell
         cell.selectionStyle = .none
+        let dataArray = totaldataArray[tableViews.index(of: tableView)!]
         cell.model = dataArray[indexPath.row]
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let dataArray = totaldataArray[tableViews.index(of: tableView)!]
         let model = dataArray[indexPath.row]
-
-        SJBRequestModel.pull_fetchAddressSection(level: model.level + 1, parent_id: model.id) { (response, status) in
-            if status == 1 {
-                if (response as! NSArray).count > 0 {
-                    self.dataArray = response as! [FJAddressModel]
-
-                    self.level = model.level + 1
-                    self.itemArray[self.level - 2] = model
-                    
-                    let temmodel = FJAddressModel()
-                    temmodel.name = "请选择"
-                    self.itemArray.append(temmodel)
-                    
-                    self.collectionView.reloadData()
-                    tableView.reloadData()
-                }
-                else
-                {
-                    self.itemArray[self.level - 1] = model
-                    self.collectionView.reloadData()
-                }
+        let newDataArray = FJSQLiteUtils.instance.queryData(level: model.level + 1, parent_id: model.id)
+        if newDataArray.count > 0 {
+            if model.level == tableViews.count {
+                totaldataArray[model.level - 1] = newDataArray
             }
             else
             {
-                
+                totaldataArray.append(newDataArray)
             }
-            
+            setupTableView()
+            scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH*CGFloat(level), y: scrollView.contentOffset.y)
         }
+        return indexPath
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dataArray = totaldataArray[tableViews.index(of: tableView)!]
+        let model = dataArray[indexPath.row]
+        tableViews[model.level - 1].reloadData()
+//        SJBRequestModel.pull_fetchAddressSection(level: model.level + 1, parent_id: model.id) { (response, status) in
+//            if status == 1 {
+//                if (response as! NSArray).count > 0 {
+//                    self.totaldataArray.append(response as! [FJAddressModel])
+//                    self.level = model.level + 1
+//                    self.itemArray[self.level - 2] = model
+//                    
+//                    let temmodel = FJAddressModel()
+//                    temmodel.name = "请选择"
+//                    self.itemArray.append(temmodel)
+//                    self.setupTableView()
+//                    self.collectionView.reloadData()
+//                    self.tableViews[self.level - 1].reloadData()
+//
+//                }
+//                else
+//                {
+//                    self.itemArray[self.level - 1] = model
+//                    self.collectionView.reloadData()
+//                }
+//            }
+//            else
+//            {
+//                
+//            }
+//            
+//        }
         
 
     }
+//    func getData() -> [FJAddressModel] {
+//        
+//    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.01
     }

@@ -16,9 +16,14 @@
 		BF62CBF41EF9099900AB2C62 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */; };
 		BF62CBFA1EF91E6C00AB2C62 /* FJButtonCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */; };
 		BF85C6281EFA654800196E84 /* FJSelectLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF85C6271EFA654800196E84 /* FJSelectLocationView.xib */; };
+		BF85C62A1EFA70D200196E84 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85C6291EFA70D200196E84 /* Common.swift */; };
 		BF8D689E1EFA165F006669F3 /* SJBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D689B1EFA165F006669F3 /* SJBRequest.swift */; };
 		BF8D689F1EFA165F006669F3 /* SJBRequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D689C1EFA165F006669F3 /* SJBRequestUrl.swift */; };
 		BF8D68A01EFA165F006669F3 /* SJBRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D689D1EFA165F006669F3 /* SJBRequestModel.swift */; };
+		BFB260D31EFB52B200FFDB25 /* tp_region.sql in Resources */ = {isa = PBXBuildFile; fileRef = BFB260D21EFB52B200FFDB25 /* tp_region.sql */; };
+		BFB260D51EFB53FA00FFDB25 /* FJSQLiteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB260D41EFB53FA00FFDB25 /* FJSQLiteUtils.swift */; };
+		BFB260D91EFB55A200FFDB25 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB260D81EFB55A200FFDB25 /* libsqlite3.0.tbd */; };
+		BFB260DB1EFB5F8100FFDB25 /* Object+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB260DA1EFB5F8100FFDB25 /* Object+Extension.swift */; };
 		BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */; };
 		BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82C1EF8C761006035A5 /* ViewController.swift */; };
 		BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD82E1EF8C761006035A5 /* Main.storyboard */; };
@@ -56,9 +61,15 @@
 		BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BF62CBF91EF91E6C00AB2C62 /* FJButtonCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJButtonCVCell.swift; sourceTree = "<group>"; };
 		BF85C6271EFA654800196E84 /* FJSelectLocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJSelectLocationView.xib; sourceTree = "<group>"; };
+		BF85C6291EFA70D200196E84 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		BF8D689B1EFA165F006669F3 /* SJBRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJBRequest.swift; sourceTree = "<group>"; };
 		BF8D689C1EFA165F006669F3 /* SJBRequestUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJBRequestUrl.swift; sourceTree = "<group>"; };
 		BF8D689D1EFA165F006669F3 /* SJBRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJBRequestModel.swift; sourceTree = "<group>"; };
+		BFB260D21EFB52B200FFDB25 /* tp_region.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tp_region.sql; sourceTree = "<group>"; };
+		BFB260D41EFB53FA00FFDB25 /* FJSQLiteUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJSQLiteUtils.swift; sourceTree = "<group>"; };
+		BFB260D61EFB558F00FFDB25 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/FJAddressPickerDemo-crrjarllqlzolxegeohqaorxqfwc/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
+		BFB260D81EFB55A200FFDB25 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BFB260DA1EFB5F8100FFDB25 /* Object+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+Extension.swift"; sourceTree = "<group>"; };
 		BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJAddressPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDAD82C1EF8C761006035A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB260D91EFB55A200FFDB25 /* libsqlite3.0.tbd in Frameworks */,
 				629550C4CDCBD404227A165C /* Pods_FJAddressPickerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +116,8 @@
 		2F66C47F7D7CCEFE6B473C93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFB260D81EFB55A200FFDB25 /* libsqlite3.0.tbd */,
+				BFB260D61EFB558F00FFDB25 /* SQLite.framework */,
 				20AF9DCAC9E28C4ECAB98821 /* Pods_FJAddressPickerDemo.framework */,
 			);
 			name = Frameworks;
@@ -149,12 +163,16 @@
 			children = (
 				BF62CBE21EF8C99600AB2C62 /* FJAddressPicker */,
 				BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */,
+				BF85C6291EFA70D200196E84 /* Common.swift */,
 				BFDAD82C1EF8C761006035A5 /* ViewController.swift */,
 				BF62CBEF1EF8FF7900AB2C62 /* View+Extension.swift */,
+				BFB260DA1EFB5F8100FFDB25 /* Object+Extension.swift */,
 				BF62CBF31EF9099900AB2C62 /* Color+Extension.swift */,
+				BFB260D41EFB53FA00FFDB25 /* FJSQLiteUtils.swift */,
 				BF8D689B1EFA165F006669F3 /* SJBRequest.swift */,
 				BF8D689C1EFA165F006669F3 /* SJBRequestUrl.swift */,
 				BF8D689D1EFA165F006669F3 /* SJBRequestModel.swift */,
+				BFB260D21EFB52B200FFDB25 /* tp_region.sql */,
 				BFDAD82E1EF8C761006035A5 /* Main.storyboard */,
 				BFDAD8311EF8C761006035A5 /* Assets.xcassets */,
 				BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */,
@@ -302,6 +320,7 @@
 			files = (
 				BFDAD8351EF8C761006035A5 /* LaunchScreen.storyboard in Resources */,
 				BF85C6281EFA654800196E84 /* FJSelectLocationView.xib in Resources */,
+				BFB260D31EFB52B200FFDB25 /* tp_region.sql in Resources */,
 				BFDAD8321EF8C761006035A5 /* Assets.xcassets in Resources */,
 				BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */,
 			);
@@ -378,6 +397,7 @@
 			files = (
 				BF62CBFA1EF91E6C00AB2C62 /* FJButtonCVCell.swift in Sources */,
 				BF8D68A01EFA165F006669F3 /* SJBRequestModel.swift in Sources */,
+				BF85C62A1EFA70D200196E84 /* Common.swift in Sources */,
 				BF62CBF41EF9099900AB2C62 /* Color+Extension.swift in Sources */,
 				BF62CBEA1EF8FD7B00AB2C62 /* FJAddressView.swift in Sources */,
 				BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */,
@@ -386,6 +406,8 @@
 				BF8D689E1EFA165F006669F3 /* SJBRequest.swift in Sources */,
 				BF62CBE61EF8FD5100AB2C62 /* FJAddressModel.swift in Sources */,
 				BF8D689F1EFA165F006669F3 /* SJBRequestUrl.swift in Sources */,
+				BFB260D51EFB53FA00FFDB25 /* FJSQLiteUtils.swift in Sources */,
+				BFB260DB1EFB5F8100FFDB25 /* Object+Extension.swift in Sources */,
 				BF62CBF01EF8FF7900AB2C62 /* View+Extension.swift in Sources */,
 				BF62CBE81EF8FD6D00AB2C62 /* FJSelectLocationView.swift in Sources */,
 			);

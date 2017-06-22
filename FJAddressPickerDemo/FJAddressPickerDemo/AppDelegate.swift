@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FJSQLiteUtils.instance.setupData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            //code
+            print("5 秒后输出")
+            for item in FJSQLiteUtils.instance.queryAllProvince(){
+                print(item.yy_modelToJSONString())
+            }
+
+        }
+        
         return true
     }
 
