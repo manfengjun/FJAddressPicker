@@ -19,6 +19,7 @@ class FJSelectLocationView: UIView {
         super.init(frame: frame)
         contentView = Bundle.main.loadNibNamed("FJSelectLocationView", owner: self, options: nil)?.first as! UIView
         contentView.frame = self.bounds
+        scrollView.isScrollEnabled = false
         addSubview(contentView)
         awakeFromNib()
     }
@@ -36,8 +37,8 @@ class FJSelectLocationView: UIView {
         collectionView.register(FJButtonCVCell.classForCoder(), forCellWithReuseIdentifier: FJButtonCVCellIdentifier)
     }
     
-    fileprivate var level:Int = 1
-    fileprivate var parent_id = 0
+//    fileprivate var level:Int = 1
+//    fileprivate var parent_id = 0
     /// 已选数组
     fileprivate var itemArray:[FJAddressModel] = []
     
@@ -72,6 +73,10 @@ class FJSelectLocationView: UIView {
         setupTableView()
         totaldataArray.append(FJSQLiteUtils.instance.queryAllProvince())
         tableViews[0].reloadData()
+        let model = FJAddressModel()
+        model.name = "请选择"
+        itemArray.append(model)
+        collectionView.reloadData()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -84,36 +89,23 @@ extension FJSelectLocationView:UICollectionViewDelegate,UICollectionViewDataSour
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (itemArray.count == 0) ? 1 : itemArray.count
+        return itemArray.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FJButtonCVCellIdentifier, for: indexPath) as! FJButtonCVCell
         if itemArray.count > 0 {
             cell.model = itemArray[indexPath.row]
             cell.titleLabel.textColor = UIColor.hexStringColor(hex: "#333333")
-            if level == indexPath.row + 1 {
-                cell.titleLabel.textColor = UIColor.red
-            }
+//            if level == indexPath.row + 1 {
+//                cell.titleLabel.textColor = UIColor.red
+//            }
         }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let model = self.itemArray[indexPath.row]
-        level = indexPath.row + 1
-//        SJBRequestModel.pull_fetchAddressSection(level: level, parent_id: model.parent_id) { (response, status) in
-//            self.dataArray = response as! [FJAddressModel]
-//            
-//            self.level = model.level + 1
-//            self.itemArray[self.level - 2] = model
-//            
-//            let temmodel = FJAddressModel()
-//            temmodel.name = "请选择"
-//            self.itemArray.append(temmodel)
-//            
-//            self.collectionView.reloadData()
-////            self.tableView.reloadData()
-//        }
-        self.itemArray.removeSubrange(Range(indexPath.row..<itemArray.count))
+//        let model = self.itemArray[indexPath.row]
+        
+//        self.itemArray.removeSubrange(Range(indexPath.row..<itemArray.count))
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 100, height: 35)
@@ -140,15 +132,22 @@ extension FJSelectLocationView:UITableViewDelegate,UITableViewDataSource{
         let model = dataArray[indexPath.row]
         let newDataArray = FJSQLiteUtils.instance.queryData(level: model.level + 1, parent_id: model.id)
         if newDataArray.count > 0 {
-            if model.level == tableViews.count {
-                totaldataArray[model.level - 1] = newDataArray
+            if model.level + 1 > totaldataArray.count {
+                totaldataArray.append(newDataArray)
+                setupTableView()
+                scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH*CGFloat(model.level), y: scrollView.contentOffset.y)
+                itemArray[model.level - 1] = model
+                let item = FJAddressModel()
+                item.name = "请选择"
+                itemArray.append(item)
+                collectionView.reloadData()
             }
             else
             {
-                totaldataArray.append(newDataArray)
+                totaldataArray[model.level - 1] = newDataArray
+                scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH*CGFloat(model.level), y: scrollView.contentOffset.y)
+
             }
-            setupTableView()
-            scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH*CGFloat(level), y: scrollView.contentOffset.y)
         }
         return indexPath
     }
@@ -156,39 +155,7 @@ extension FJSelectLocationView:UITableViewDelegate,UITableViewDataSource{
         let dataArray = totaldataArray[tableViews.index(of: tableView)!]
         let model = dataArray[indexPath.row]
         tableViews[model.level - 1].reloadData()
-//        SJBRequestModel.pull_fetchAddressSection(level: model.level + 1, parent_id: model.id) { (response, status) in
-//            if status == 1 {
-//                if (response as! NSArray).count > 0 {
-//                    self.totaldataArray.append(response as! [FJAddressModel])
-//                    self.level = model.level + 1
-//                    self.itemArray[self.level - 2] = model
-//                    
-//                    let temmodel = FJAddressModel()
-//                    temmodel.name = "请选择"
-//                    self.itemArray.append(temmodel)
-//                    self.setupTableView()
-//                    self.collectionView.reloadData()
-//                    self.tableViews[self.level - 1].reloadData()
-//
-//                }
-//                else
-//                {
-//                    self.itemArray[self.level - 1] = model
-//                    self.collectionView.reloadData()
-//                }
-//            }
-//            else
-//            {
-//                
-//            }
-//            
-//        }
-        
-
     }
-//    func getData() -> [FJAddressModel] {
-//        
-//    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.01
     }
