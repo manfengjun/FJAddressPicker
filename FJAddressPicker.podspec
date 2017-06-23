@@ -7,7 +7,7 @@ Pod::Spec.new do|s|
   s.author={"manfengjun"=>"chinafengjun@gmail.com"}
   s.platform=:ios,"8.0"
   s.source={:git=>"https://github.com/manfengjun/FJAddressPicker.git",:tag=> s.version }
-  s.source_files="FJAddressPicker","*.{h,m}"
+  s.source_files="FJAddressPicker","*.{swift}"
   s.requires_arc= true
  end
 
