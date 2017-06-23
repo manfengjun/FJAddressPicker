@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		629550C4CDCBD404227A165C /* Pods_FJAddressPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AF9DCAC9E28C4ECAB98821 /* Pods_FJAddressPickerDemo.framework */; };
-		BFB260D31EFB52B200FFDB25 /* tp_region.sql in Resources */ = {isa = PBXBuildFile; fileRef = BFB260D21EFB52B200FFDB25 /* tp_region.sql */; };
 		BFB260D91EFB55A200FFDB25 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB260D81EFB55A200FFDB25 /* libsqlite3.0.tbd */; };
 		BFD76A091EFD0DCF00F131B2 /* address_select_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD76A001EFD0DCF00F131B2 /* address_select_yes.png */; };
 		BFD76A0A1EFD0DCF00F131B2 /* AddressAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD76A011EFD0DCF00F131B2 /* AddressAttribute.swift */; };
@@ -19,6 +18,7 @@
 		BFD76A0F1EFD0DCF00F131B2 /* FJItemCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD76A061EFD0DCF00F131B2 /* FJItemCVCell.xib */; };
 		BFD76A101EFD0DCF00F131B2 /* FJSelectLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD76A071EFD0DCF00F131B2 /* FJSelectLocationView.swift */; };
 		BFD76A111EFD0DCF00F131B2 /* FJSQLiteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD76A081EFD0DCF00F131B2 /* FJSQLiteUtils.swift */; };
+		BFD76A131EFD0F9300F131B2 /* tp_region.sql in Resources */ = {isa = PBXBuildFile; fileRef = BFD76A121EFD0F9300F131B2 /* tp_region.sql */; };
 		BFDAD82B1EF8C761006035A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */; };
 		BFDAD82D1EF8C761006035A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAD82C1EF8C761006035A5 /* ViewController.swift */; };
 		BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDAD82E1EF8C761006035A5 /* Main.storyboard */; };
@@ -48,7 +48,6 @@
 /* Begin PBXFileReference section */
 		20AF9DCAC9E28C4ECAB98821 /* Pods_FJAddressPickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FJAddressPickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449A7A076E4CE9E7B263CDCA /* Pods-FJAddressPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJAddressPickerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJAddressPickerDemo/Pods-FJAddressPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BFB260D21EFB52B200FFDB25 /* tp_region.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tp_region.sql; sourceTree = "<group>"; };
 		BFB260D61EFB558F00FFDB25 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/FJAddressPickerDemo-crrjarllqlzolxegeohqaorxqfwc/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
 		BFB260D81EFB55A200FFDB25 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		BFD76A001EFD0DCF00F131B2 /* address_select_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = address_select_yes.png; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		BFD76A061EFD0DCF00F131B2 /* FJItemCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJItemCVCell.xib; sourceTree = "<group>"; };
 		BFD76A071EFD0DCF00F131B2 /* FJSelectLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJSelectLocationView.swift; sourceTree = "<group>"; };
 		BFD76A081EFD0DCF00F131B2 /* FJSQLiteUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FJSQLiteUtils.swift; sourceTree = "<group>"; };
+		BFD76A121EFD0F9300F131B2 /* tp_region.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tp_region.sql; sourceTree = "<group>"; };
 		BFDAD8271EF8C761006035A5 /* FJAddressPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJAddressPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDAD82C1EF8C761006035A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +116,7 @@
 		BFD769FF1EFD0DCF00F131B2 /* FJAddressPicker */ = {
 			isa = PBXGroup;
 			children = (
+				BFD76A121EFD0F9300F131B2 /* tp_region.sql */,
 				BFD76A001EFD0DCF00F131B2 /* address_select_yes.png */,
 				BFD76A011EFD0DCF00F131B2 /* AddressAttribute.swift */,
 				BFD76A021EFD0DCF00F131B2 /* FJAddressModel.swift */,
@@ -157,7 +158,6 @@
 			children = (
 				BFDAD82A1EF8C761006035A5 /* AppDelegate.swift */,
 				BFDAD82C1EF8C761006035A5 /* ViewController.swift */,
-				BFB260D21EFB52B200FFDB25 /* tp_region.sql */,
 				BFDAD82E1EF8C761006035A5 /* Main.storyboard */,
 				BFDAD8311EF8C761006035A5 /* Assets.xcassets */,
 				BFDAD8331EF8C761006035A5 /* LaunchScreen.storyboard */,
@@ -305,9 +305,9 @@
 			files = (
 				BFD76A0D1EFD0DCF00F131B2 /* FJAddressTVCell.xib in Resources */,
 				BFD76A091EFD0DCF00F131B2 /* address_select_yes.png in Resources */,
+				BFD76A131EFD0F9300F131B2 /* tp_region.sql in Resources */,
 				BFDAD8351EF8C761006035A5 /* LaunchScreen.storyboard in Resources */,
 				BFD76A0F1EFD0DCF00F131B2 /* FJItemCVCell.xib in Resources */,
-				BFB260D31EFB52B200FFDB25 /* tp_region.sql in Resources */,
 				BFDAD8321EF8C761006035A5 /* Assets.xcassets in Resources */,
 				BFDAD8301EF8C761006035A5 /* Main.storyboard in Resources */,
 			);
