@@ -9,5 +9,4 @@ Pod::Spec.newdo|s|
   s.source={:git=>"https://github.com/manfengjun/FJAddressPicker.git",:tag=> s.version }
   s.source_files="FJAddressPicker","*.{h,m}"
   s.requires_arc= true
-
-  end
+ end
