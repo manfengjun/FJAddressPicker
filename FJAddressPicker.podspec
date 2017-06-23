@@ -1,6 +1,6 @@
 Pod::Spec.newdo|s|
   s.name="FJAddressPicker"
-  s.version="0.0.1"
+  s.version="1.0.0"
   s.summary="仿京东实现地址选择器，方便快捷"
   s.homepage="https://github.com/manfengjun/FJAddressPicker"
   s.license={:type=>"MIT",:file=>"LICENSE"}
