@@ -1,4 +1,4 @@
-Pod::Spec.newdo|s|
+Pod::Spec.new do|s|
   s.name="FJAddressPicker"
   s.version="1.0.0"
   s.summary="仿京东实现地址选择器，方便快捷"
@@ -10,3 +10,4 @@ Pod::Spec.newdo|s|
   s.source_files="FJAddressPicker","*.{h,m}"
   s.requires_arc= true
  end
+
