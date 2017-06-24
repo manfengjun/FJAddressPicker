@@ -9,5 +9,8 @@ Pod::Spec.new do|s|
   s.source={:git=>"https://github.com/manfengjun/FJAddressPicker.git",:tag=> s.version }
   s.source_files="FJAddressPicker","*.{swift}"
   s.requires_arc= true
+  
+  s.dependency 'YYModel', '~> 1.0.4'
+  s.dependency 'FMDB', '~> 2.7.2'
  end
 
