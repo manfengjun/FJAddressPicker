@@ -20,7 +20,7 @@ class FJSelectLocationView: UIView {
     /// 菜单列表
     fileprivate lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
+        layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0.5, width: SCREEN_WIDTH, height: 40), collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.showsVerticalScrollIndicator = false
